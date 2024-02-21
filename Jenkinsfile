@@ -1,10 +1,10 @@
-pipeline{
+pipeline {
     agent any
-    stages{
-        stage('Build maven'){
-            steps{
+    stages {
+        stage('Build Maven') {
+            steps {
                 sh 'pwd'
-                sh 'mvn clean install pakage'
+                sh 'mvn clean install package'
             }
         }
     }
